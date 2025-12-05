@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Vacation Website</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="header-wrapper">
+  <div class="top-bar">
+    <div class="logo-block">
+      <img src="Images/logo.png" alt="">
+    </div>
+
+    <!-- Search bar is absolutely centered -->
+    <div class="search-bar">
+      <span>Search Destinations</span>
+      <div class="search-circle">
+        <img src="Images/search.png">
+      </div>
+    </div>
+
+     <div class="icon-group">
+    <a href="#"><img class="icon profile-logo" src="Images/Frame 30485.jpg" id="profilePic"></a>
+     <div class="dropdown" id="dropdownMenu">
+          <div class="dropdown-header">My Accounts</div>
+          <a href="mypersonal.html">Personal Information<i class="fa-solid fa-arrow-right-long"></i></a>
+          <a href="mybooking.html">My Booking<i class="fa-solid fa-arrow-right-long"></i></a>
+          <a href="password.html">Password Manager<i class="fa-solid fa-arrow-right-long"></i></a>
+          <a href="logout.html">Logout<i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+    <a href="whishlist.html"><i class="fa-regular fa-heart"></i></i></a>
+    <a href="addtocart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+    <a href="#"><i class="fa-regular fa-bell"></i></a>
+  </div>
+  </div>
+
+  <div class="nav-bar">
+    <ul class="nav-links">
+       <li><a href="home.html" class="active"><span>Home</span></a></li>
+     <li><a href="destination.html"><span>Destinations</span></a></li>
+      <li><a href="category.html"><span>Categories</span></a></li>
+      <li><a href="package.html"><span>Packages</span></a></li>
+      <li><a href="blog.html"><span>Blogs</span></a></li>
+      <li><a href="contact.html"><span>Contact</span></a></li>
+    </ul>
+  </div>
+</div>
+
+<section class="hero-section">
+  <div class="hero-content">
+    <h1>Explore the World<br><span>Your Way</span></h1>
+    <p>Find unforgettable trips, adventures, and escapes around the globe.</p>
+
+    <div class="hero-buttons">
+   <button class="plan-btn" onclick="window.location.href='destination.html'">Plan Your Trip</button>
+      <button class="enquiry-btn" onclick="window.location.href='enquiry.html'">Enquiry →</button>
+    </div>
+    </div>
+  </div>
+</section>
+<section class="road-banner">
+  <img src="Images/ba9baeaeddfe19451099c8ff0547ca368c85f970.jpg" alt="road view">
+</section>
+
+<!-- WHY CHOOSE US SECTION -->
+<section class="choose-us">
+  <h2>Why Choose Us!</h2>
+  <div class="cards-container">
+
+    <div class="card">
+      <img src="Images/1.png" alt="">
+      <p>"Trusted by 1 Million Travellers"</p>
+    </div>
+
+    <div class="card">
+      <img src="Images/2.png" alt="">
+      <p>"Best Price Guarantee"</p>
+    </div>
+
+    <div class="card">
+      <img src="Images/3.png" alt="">
+      <p>"Certified Travel Experts"</p>
+    </div>
+
+    <div class="card">
+      <img src="Images/4.png" alt="">
+      <p>"24/7 Customer Support"</p>
+    </div>
+
+  </div>
+</section>
+<!-- ABOUT US SECTION -->
+<section class="about-section">
+  <div class="about-overlay">
+    <h2 class="about-title">
+      
+       ABOUT US
+      
+    </h2>
+
+    <p class="about-text">
+      At WanderWise, we believe that travel is more than just reaching a destination—
+      it’s about experiencing the journey, creating lasting memories, and discovering new perspectives.
+    </p>
+
+    <p class="about-subtext">
+      Founded by passionate explorers and travel experts, WanderWise was built to simplify the way you plan,
+      book, and enjoy your trips. Whether you're dreaming of a serene beach retreat,
+      an adrenaline-pumping adventure, or a culturally rich city escape,
+      our platform connects you with hand-picked experiences tailored to your interests.
+    </p>
+  </div>
+</section>
+
+<!-- POPULAR DESTINATIONS SECTION -->
+<section class="popular-section">
+  <h2>Popular Destinations</h2>
+  <div class="popular-cards">
+
+    <div class="p-card"><img src="Images/ChatGPT Image Aug 1, 2025, 10_44_57 AM 1.jpg"><span>Paris</span></div>
+    <div class="p-card"><img src="Images/ChatGPT Image Aug 1, 2025, 10_59_40 AM 1.jpg"><span>Bali</span></div>
+    <div class="p-card"><img src="Images/ChatGPT Image Aug 1, 2025, 10_44_57 AM 5.jpg"><span>Cape Town</span></div>
+    <div class="p-card"><img src="Images/ChatGPT Image Aug 1, 2025, 10_44_57 AM 6.jpg"><span>Rome</span></div>
+    <div class="p-card"><img src="Images/ChatGPT Image Aug 1, 2025, 10_44_57 AM 4.jpg"><span>California</span></div>
+
+  </div>
+</section>
+
+<section class="exclusive-section">
+  <h2 style="text-align: center;">Exclusive Packages</h2>
+  <div class="ex-card-row">
+
+    <div class="ex-card">
+      <img src="Images/ChatGPT Image Aug 1, 2025, 10_46_52 AM 1.jpg" alt="">
+      <div class="ex-card-content">
+        <p class="ex-city">Paris</p>
+        <p class="ex-days">6 Days / 5 Nights</p>
+        <p class="ex-price">$12000</p>
+          <button class="ex-book-btn" onclick="window.location.href='payment.html'">Book now</button>
+      </div>
+     <button class="ex-fav"><img src="Images/h1.png"></button>
+    </div>
+
+    <div class="ex-card">
+      <img src="Images/ChatGPT Image Aug 1, 2025, 10_59_40 AM 4.jpg" alt="">
+      <div class="ex-card-content">
+        <p class="ex-city">Bali</p>
+        <p class="ex-days">8 Days / 7 Nights</p>
+        <p class="ex-price">$22000</p>
+          <button class="ex-book-btn" onclick="window.location.href='payment.html'">Book now</button>
+      </div>
+      <button class="ex-fav"><img src="Images/h1.png"></button>
+    </div>
+
+    <div class="ex-card">
+      <img src="Images/ChatGPT Image Aug 1, 2025, 10_44_57 AM 2.jpg" alt="">
+      <div class="ex-card-content">
+        <p class="ex-city">Cape Town</p>
+        <p class="ex-days">7 Days / 6 Nights</p>
+        <p class="ex-price">$18000</p>
+          <button class="ex-book-btn" onclick="window.location.href='payment.html'">Book now</button>
+      </div>
+<button class="ex-fav"><img src="Images/h1.png"></button>
+    </div>
+
+    <div class="ex-card">
+      <img src="Images/ChatGPT Image Aug 1, 2025, 10_44_57 AM 6.jpg" alt="">
+      <div class="ex-card-content">
+        <p class="ex-city">Rome</p>
+        <p class="ex-days">6 Days / 5 Nights</p>
+        <p class="ex-price">$12000</p>
+         <button class="ex-book-btn" onclick="window.location.href='payment.html'">Book now</button>
+      </div>
+      <button class="ex-fav"><img src="Images/h1.png"></button>
+    </div>
+
+  </div>
+</section>
+  <h2 class="testimonial-heading">What Say Our Clients</h2>
+<section class="testimonial-section">
+
+
+  <div class="testimonial-row">
+
+    <!-- CARD REPEAT 1 -->
+    <div class="testimonial-card">
+      <div class="t-img"><img src="Images/8af854902f94c9045981f27e5b8f948e3033c073.jpg" alt=""><p class="t-name"><span>Emily R.</span></p></div>
+      <div class="t-content">
+        <p class="t-msg">This travel agency made our vacation unforgettable! Excellent service and fantastic itinerary.</p>
+        <div class="t-rating">★★★★★</div>
+        
+      </div>
+    </div>
+
+    <!-- CARD REPEAT 2 -->
+    <div class="testimonial-card">
+      <div class="t-img"><img src="Images/fac1af7a257732ec3d775a3ebd589818b1689ede.jpg" alt=""> <p class="t-name"><span>David W.</span></p></div>
+      <div class="t-content">
+        <p class="t-msg">This travel agency made our vacation unforgettable! Excellent service!</p>
+        <div class="t-rating">★★★★★</div>
+       
+      </div>
+    </div>
+
+    <!-- CARD REPEAT 3 -->
+    <div class="testimonial-card">
+      <div class="t-img"><img src="Images/54ec28319019985e836129b39c521de013225914.jpg" alt=""><p class="t-name"><span>AndreyaS.</span></p></div>
+     <div class="t-content">
+        <p class="t-msg">This travel agency made our vacation unforgettable! Excellent support!</p>
+        <div class="t-rating">★★★★★</div>
+        
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!--Footer Section-->
+<!-- EXACT FOOTER DESIGN -->
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <!-- LEFT LOGO BLOCK -->
+    <div class="footer-col logo-block">
+      <img src="Images/flogo.png" alt="">
+      <p>WanderWise</p>
+    </div>
+
+    <!-- ABOUT US COLUMN -->
+    <div class="footer-col">
+      <h3>About Us</h3>
+      <ul>
+        <li>Who We Are</li>
+        <li>Our Mission</li>
+        <li>How It Works</li>
+        <li>Vacations</li>
+      </ul>
+    </div>
+
+    <!-- QUICK LINKS COLUMN -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul>
+        <li>Browse Packages</li>
+        <li>Categories</li>
+        <li>Support</li>
+        <li>Blog</li>
+      </ul>
+    </div>
+
+    <!-- EXPLORE COLUMN -->
+    <div class="footer-col">
+      <h3>Explore</h3>
+      <ul>
+        <li>Adventure</li>
+        <li>Beach Tours</li>
+        <li>City Tours</li>
+        <li>Family</li>
+      </ul>
+    </div>
+
+    <!-- CONTACT & SOCIAL COLUMN -->
+    <div class="footer-col">
+      <h3>Contact & Social</h3>
+      <p>123 Saik Street, Chennai, TN</p>
+      <p>+91-7887676554</p>
+      <p>Wan@wanderwisetravel.com</p>
+     
+    </div>
+
+    <!-- RIGHT SIDE CIRCLE IMAGE -->
+    <div class="footer-col img-block">
+      <img src="Images/8c95e3ef46e407b0142cba5419c2cbb1714d7e95.jpg" alt="">
+      <p class="follow-text">Follow Us On :</p>
+      <br>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-google"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        
+        <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+      </div>
+      
+    </div>
+
+  </div>
+ <!-- centered copyright + terms -->
+  <!-- FOOTER TERMS (Centered below) -->
+
+
+  <div class="footer-terms">
+    <p>© 2025 wanderwisevacation. All rights reserved.</p>
+    <p>Terms & Conditions | Privacy Policy</p>
+  </div>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Vacation Website</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="header-wrapper">
+  <div class="top-bar">
+    <div class="logo-block">
+      <img src="Images/logo.png" alt="">
+    </div>
+
+    <!-- Search bar is absolutely centered -->
+    <div class="search-bar">
+      <span>Search Destinations</span>
+      <div class="search-circle">
+        <img src="Images/search.png">
+      </div>
+    </div>
+
+     <div class="icon-group">
+    <a href="#"><img class="icon profile-logo" src="Images/Frame 30485.jpg" id="profilePic"></a>
+    <div class="dropdown" id="dropdownMenu">
+          <div class="dropdown-header">My Accounts</div>
+          <a href="mypersonal.html">Personal Information<i class="fa-solid fa-arrow-right-long"></i></a>
+          <a href="mybooking.html">My Booking<i class="fa-solid fa-arrow-right-long"></i></a>
+          <a href="password.html">Password Manager<i class="fa-solid fa-arrow-right-long"></i></a>
+          <a href="logout.html">Logout<i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+    <a href="whishlist.html"><i class="fa-regular fa-heart"></i></i></a>
+    <a href="addtocart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+    <a href="#"><i class="fa-regular fa-bell"></i></a>
+  </div>
+  </div>
+
+  <div class="nav-bar">
+    <ul class="nav-links">
+ <li><a href="home.html"><span>Home</span></a></li>
+      <li><a href="destination.html"><span>Destinations</span></a></li>
+      <li><a href="category.html"><span>Categories</span></a></li>
+      <li><a href="package.html"><span>Packages</span></a></li>
+      <li><a href="blog.html"><span>Blogs</span></a></li>
+      <li><a href="contact.html"><span>Contact</span></a></li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="cart-container">
+
+    <!-- LEFT SIDE TABLE -->
+    <div class="cart-table">
+
+        <div class="cart-header">
+            <div>Destination</div>
+            <div>Name</div>
+            <div>Quantity Package</div>
+            <div>Subtotal</div>
+        </div>
+
+        <div class="cart-row">
+            <img src="Images/ChatGPT Image Aug 1, 2025, 10_59_40 AM 2.jpg" alt="Bali Trip">
+
+            <div class="package-name">Bali Vacation trip</div>
+
+            <div class="quantity-box">
+                <button>-</button>
+                <input type="text" value="1">
+                <button>+</button>
+            </div>
+
+            <div class="subtotal">Rs.25000</div>
+        </div>
+
+        <!-- Coupon Area -->
+        <div class="coupon-area">
+            <input class="coupon-input" placeholder="Coupencode">
+            <button class="apply-btn">Apply coupen</button>
+        </div>
+
+    </div>
+
+    <!-- RIGHT ORDER SUMMARY BOX -->
+    <div class="summary-box">
+
+        <div class="summary-header">Order Summary</div>
+
+        <div class="summary-content">
+            <div class="summary-row">
+                <span>Booking package</span>
+                <span>1</span>
+            </div>
+
+            <div class="summary-row">
+                <span>Subtotal</span>
+                <span>Rs.25000</span>
+            </div>
+
+            <div class="summary-row">
+                <span>Business Class</span>
+                <span></span>
+            </div>
+
+            <div class="summary-row">
+                <span>Taxes</span>
+                <span>Rs.00.0</span>
+            </div>
+
+            <div class="summary-row">
+                <span>Coupen Discount</span>
+                <span>Rs.5000</span>
+            </div>
+
+            <hr>
+
+            <div class="summary-row" style="font-size:22px; font-weight:700;">
+                <span>Total</span>
+                <span>Rs.20000</span>
+            </div>
+
+            <button class="checkout-btn">Proceed to checkout</button>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+<!--Footer Section-->
+<!-- EXACT FOOTER DESIGN -->
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <!-- LEFT LOGO BLOCK -->
+    <div class="footer-col logo-block">
+      <img src="Images/flogo.png" alt="">
+      <p>WanderWise</p>
+    </div>
+
+    <!-- ABOUT US COLUMN -->
+    <div class="footer-col">
+      <h3>About Us</h3>
+      <ul>
+        <li>Who We Are</li>
+        <li>Our Mission</li>
+        <li>How It Works</li>
+        <li>Vacations</li>
+      </ul>
+    </div>
+
+    <!-- QUICK LINKS COLUMN -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul>
+        <li>Browse Packages</li>
+        <li>Categories</li>
+        <li>Support</li>
+        <li>Blog</li>
+      </ul>
+    </div>
+
+    <!-- EXPLORE COLUMN -->
+    <div class="footer-col">
+      <h3>Explore</h3>
+      <ul>
+        <li>Adventure</li>
+        <li>Beach Tours</li>
+        <li>City Tours</li>
+        <li>Family</li>
+      </ul>
+    </div>
+
+    <!-- CONTACT & SOCIAL COLUMN -->
+    <div class="footer-col">
+      <h3>Contact & Social</h3>
+      <p>123 Saik Street, Chennai, TN</p>
+      <p>+91-7887676554</p>
+      <p>Wan@wanderwisetravel.com</p>
+     
+    </div>
+
+    <!-- RIGHT SIDE CIRCLE IMAGE -->
+    <div class="footer-col img-block">
+      <img src="Images/8c95e3ef46e407b0142cba5419c2cbb1714d7e95.jpg" alt="">
+      <p class="follow-text">Follow Us On :</p>
+      <br>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-google"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        
+        <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+      </div>
+      
+    </div>
+
+  </div>
+ <!-- centered copyright + terms -->
+  <!-- FOOTER TERMS (Centered below) -->
+
+
+  <div class="footer-terms">
+    <p>© 2025 wanderwisevacation. All rights reserved.</p>
+    <p>Terms & Conditions | Privacy Policy</p>
+  </div>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>
+

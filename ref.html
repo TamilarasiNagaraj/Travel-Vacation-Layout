@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment Page</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+
+/* ------------------ PAGE BACKGROUND ------------------ */
+body {
+    background: #F5F7FA;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* ------------------ ORDER SUMMARY BOX ------------------ */
+.order-summary-box {
+    width: 330px;
+    background: #F31B03;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 40px;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.25);
+}
+
+.summary-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+/* Rows inside summary */
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/* Total Row Bold */
+.total-row {
+    margin-top: 18px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255,255,255,0.4);
+    font-weight: 700;
+}
+
+/* ------------------ PAYMENT DROPDOWN ------------------ */
+.paymentsectionunique {
+    position: absolute;
+    left: 520px;          /* PERFECT MATCH like screenshot */
+    top: 120px;
+    width: 260px;
+}
+
+/* Toggle Header */
+.payment-toggle {
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.payment-toggle i {
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+/* Dropdown Box */
+.payment-dropdown {
+    width: 260px;
+    background: #F31B03;
+    padding: 18px;
+    border-radius: 6px;
+    margin-top: 10px;
+    display: none;
+    animation: fadeIn 0.3s ease-out;
+}
+
+.payment-dropdown p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: white;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Rotate arrow */
+.rotate {
+    transform: rotate(180deg);
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- =============== ORDER SUMMARY =============== -->
+<div class="order-summary-box">
+    <div class="summary-title">Order Summary</div>
+
+    <div class="summary-row">
+        <span>Booking package</span>
+        <span>1</span>
+    </div>
+
+    <div class="summary-row">
+        <span>Subtotal</span>
+        <span>Rs.25000</span>
+    </div>
+
+    <div class="summary-row">
+        <span>Taxes</span>
+        <span>Rs.00.0</span>
+    </div>
+
+    <div class="summary-row">
+        <span>Coupon Discount</span>
+        <span>Rs.5000</span>
+    </div>
+
+    <div class="summary-row total-row">
+        <span>Total</span>
+        <span>Rs.20000</span>
+    </div>
+</div>
+
+<!-- =============== PAYMENT DROPDOWN =============== -->
+<div class="paymentsectionunique">
+
+    <div class="payment-toggle" onclick="togglePaymentMenu()">
+        Payment Selection
+        <i id="payArrow" class="fa-solid fa-chevron-down"></i>
+    </div>
+
+    <div id="paymentMenu" class="payment-dropdown">
+        <p>Credit card</p>
+        <p>Debit card</p>
+        <p>Google pay</p>
+        <p>UPI</p>
+    </div>
+
+</div>
+
+
+<!-- =============== JAVASCRIPT =============== -->
+<script>
+function togglePaymentMenu() {
+    let box = document.getElementById("paymentMenu");
+    let arrow = document.getElementById("payArrow");
+
+    if (box.style.display === "block") {
+        box.style.display = "none";
+        arrow.classList.remove("rotate");
+    } else {
+        box.style.display = "block";
+        arrow.classList.add("rotate");
+    }
+}
+</script>
+
+</body>
+</html>
